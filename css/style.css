@@ -1210,10 +1210,51 @@ form button {
 
 /* ?============== PRICING ==============?*/
 
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pricing-filter-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.pricing-filter-btns {
+  padding: 3rem 0;
+}
+
+.btn-filter {
+  display: inline-flex;
+  margin: 0 0.5rem;
+  padding: 0.7rem 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.btn-filter.mixitup-control-active {
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+}
+
 .pricing-card {
   box-shadow: rgba(29, 29, 36, 0.2) 0px 7px 29px 0px;
   border-radius: 20px;
   background-color: var(--white);
+  padding-bottom: 20px;
 }
 
 .pricing-table .price-h1 {

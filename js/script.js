@@ -54,3 +54,7 @@ addEventOnElem(window, "scroll", headerActive);
 document.addEventListener("DOMContentLoaded", function () {
   var mixer = mixitup(".product-filter-items");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var mixer = mixitup(".pricing-filter-items");
+});
