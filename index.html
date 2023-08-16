@@ -1534,7 +1534,7 @@
                 Feel free to make a call request now
               </h2>
               <div class="form">
-                <form>
+                <form id="contact-form">
                   <label for="name">Your Name:</label>
                   <input
                     type="text"
@@ -1565,7 +1565,7 @@
                   <label for="interest">I am interested in:</label>
                   <input
                     type="text"
-                    id="ineterest"
+                    id="interest"
                     name="interest"
                     placeholder="I am interested in"
                     required
@@ -1779,6 +1779,37 @@
     <script src="./mixitup.min.js"></script>
 
     <script src="./js/script.js" defer></script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+      emailjs.init("user_lslLGJTY96D9CYuO");
+    </script>
+
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const form = event.target;
+          const data = new FormData(form);
+
+          emailjs
+            .sendForm("service_jemjsjo", "template_5423t9e", data) // Replace with your service ID and template ID
+            .then(
+              function (response) {
+                console.log("Email sent:", response);
+                alert("Email sent successfully!");
+                form.reset();
+              },
+              function (error) {
+                console.log("Error sending email:", error);
+                alert("Error sending email. Please try again later.");
+              }
+            );
+        });
+    </script>
 
     <!--? ============ IONICON LINK ============ ?-->
 
