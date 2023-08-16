@@ -226,10 +226,10 @@ body {
 .btn {
   max-width: max-content;
   font-weight: var(--fw-700);
-  height: 55px;
+  height: 30px;
   display: flex;
   align-items: center;
-  padding-inline: 50px;
+  padding-inline: 40px;
   border-radius: var(--radius-10);
   overflow: hidden;
   transition: var(--transition-2);
@@ -1927,6 +1927,14 @@ form button {
 
   .navbar-list {
     gap: 50px;
+  }
+
+  .navbar-link {
+    color: white;
+  }
+
+  .navbar-link:hover {
+    color: white;
   }
 
   /* ?====== HERO ======?*/
