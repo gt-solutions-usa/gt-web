@@ -1,90 +1,100 @@
-const wrapper = document.querySelector(".testiwrapper");
-const carousel = document.querySelector(".testicarousel");
-const arrowBtns = document.querySelectorAll(".testiwrapper i");
-const firstCardWidth = carousel.querySelector(".testicard").offsetWidth;
-const carouselChildrens = [...carousel.children];
+const testiSliderWrapper = document.querySelector(".testiwrapper");
+const testiSliderCarousel = document.querySelector(".testicarousel");
+const testiArrowBtns = document.querySelectorAll(".testiwrapper i");
+const testiFirstCardWidth =
+  testiSliderCarousel.querySelector(".testicard").offsetWidth;
+const testiCarouselChildrens = [...testiSliderCarousel.children];
 
-let isDragging = false,
-  startX,
-  startScrollLeft,
-  timeoutId;
+let testiIsDragging = false,
+  testiStartX,
+  testiStartScrollLeft,
+  testiTimeoutId;
 
 // Get the number of cards that can fit in the carousel at once
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+let testiCardPerView = Math.round(
+  testiSliderCarousel.offsetWidth / testiFirstCardWidth
+);
 
-// Insert copies of the last few ards to beginning of carousel for infinite scrolling
-carouselChildrens
-  .slice(-cardPerView)
+// Insert copies of the last few cards to the beginning of the carousel for infinite scrolling
+testiCarouselChildrens
+  .slice(-testiCardPerView)
   .reverse()
   .forEach((card) => {
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+    testiSliderCarousel.insertAdjacentHTML("afterbegin", card.outerHTML);
   });
 
-// Insert copies of the first few cards to end of carousel for infinite scrolling
-carouselChildrens.slice(0, cardPerView).forEach((card) => {
-  carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+// Insert copies of the first few cards to the end of the carousel for infinite scrolling
+testiCarouselChildrens.slice(0, testiCardPerView).forEach((card) => {
+  testiSliderCarousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
 // Add event listeners for the arrow buttons to scroll the carousel left and right
-arrowBtns.forEach((btn) => {
+testiArrowBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
+    testiSliderCarousel.scrollLeft +=
+      btn.id === "left" ? -testiFirstCardWidth : testiFirstCardWidth;
   });
 });
 
-const dragStart = (e) => {
-  isDragging = true;
-  carousel.classList.add("dragging");
+const testiDragStart = (e) => {
+  testiIsDragging = true;
+  testiSliderCarousel.classList.add("dragging");
   // Records the initial cursor and scroll position of the carousel
-  startX = e.pageX;
-  startScrollLeft = carousel.scrollLeft;
+  testiStartX = e.pageX;
+  testiStartScrollLeft = testiSliderCarousel.scrollLeft;
 };
 
-const dragging = (e) => {
-  if (!isDragging) return; // if isDragging is false return from here
-  // Updates the scroll position of the carousel based on the cursor movement
-  carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+const testiDragging = (e) => {
+  if (!testiIsDragging) return; // if isDragging is false, return from here
+  // Updates the scroll position of the carousel based on cursor movement
+  testiSliderCarousel.scrollLeft =
+    testiStartScrollLeft - (e.pageX - testiStartX);
 };
 
-const dragStop = () => {
-  isDragging = false;
-  carousel.classList.remove("dragging");
+const testiDragStop = () => {
+  testiIsDragging = false;
+  testiSliderCarousel.classList.remove("dragging");
 };
 
-const autoPlay = () => {
+const testiAutoPlay = () => {
   if (window.innerWidth < 800) return; // Return if window is smaller than 800
   // Autoplay the carousel after every 2500ms
-  timeoutId = setTimeout(() => (carousel.scrollLeft += firstCardWidth), 2500);
+  testiTimeoutId = setTimeout(
+    () => (testiSliderCarousel.scrollLeft += testiFirstCardWidth),
+    2500
+  );
 };
 
-autoPlay();
+testiAutoPlay();
 
-const infiniteScroll = () => {
+const testiInfiniteScroll = () => {
   // If the carousel is at the beginning, scroll to the end
-  if (carousel.scrollLeft === 0) {
-    carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
-    carousel.classList.remove("no-transition");
+  if (testiSliderCarousel.scrollLeft === 0) {
+    testiSliderCarousel.classList.add("no-transition");
+    testiSliderCarousel.scrollLeft =
+      testiSliderCarousel.scrollWidth - 2 * testiSliderCarousel.offsetWidth;
+    testiSliderCarousel.classList.remove("no-transition");
   }
   // If the carousel is at the end, scroll to the beginning
   else if (
-    Math.ceil(carousel.scrollLeft) ===
-    carousel.scrollWidth - carousel.offsetWidth
+    Math.ceil(testiSliderCarousel.scrollLeft) ===
+    testiSliderCarousel.scrollWidth - testiSliderCarousel.offsetWidth
   ) {
-    carousel.classList.add("no-transition");
-    carousel.scrollLeft = carousel.offsetWidth;
-    carousel.classList.remove("no-transition");
+    testiSliderCarousel.classList.add("no-transition");
+    testiSliderCarousel.scrollLeft = testiSliderCarousel.offsetWidth;
+    testiSliderCarousel.classList.remove("no-transition");
   }
 
-  // Clear existing timeout & start autoplay if mouse is not hovering over carousel
-
-  clearTimeout(timeoutId);
-  if (!wrapper.matches(":hover")) autoPlay();
+  // Clear the existing timeout & start autoplay if the mouse is not hovering over the carousel
+  clearTimeout(testiTimeoutId);
+  if (!testiSliderWrapper.matches(":hover")) testiAutoPlay();
 };
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
-wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
+testiSliderCarousel.addEventListener("mousedown", testiDragStart);
+testiSliderCarousel.addEventListener("mousemove", testiDragging);
+document.addEventListener("mouseup", testiDragStop);
+testiSliderCarousel.addEventListener("scroll", testiInfiniteScroll);
+testiSliderWrapper.addEventListener("mouseenter", () =>
+  clearTimeout(testiTimeoutId)
+);
+testiSliderWrapper.addEventListener("mouseleave", testiAutoPlay);
