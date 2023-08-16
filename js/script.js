@@ -1,7 +1,4 @@
-'use strict';
-
-
-
+"use strict";
 
 // ? Add Event on Elements ? //
 
@@ -13,9 +10,7 @@ const addEventOnElem = function (elem, type, callback) {
   } else {
     elem.addEventListener(type, callback);
   }
-}
-
-
+};
 
 // ? Navbar Toggle ? //
 
@@ -27,18 +22,16 @@ const overlay = document.querySelector("[data-overlay]");
 const toggleNavbar = function () {
   navbar.classList.toggle("active");
   overlay.classList.toggle("active");
-}
+};
 
 addEventOnElem(navTogglers, "click", toggleNavbar);
 
 const closeNavbar = function () {
   navbar.classList.remove("active");
   overlay.classList.remove("active");
-}
+};
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
-
-
 
 // ? Header & back top btn show when scroll down to 100px ? //
 
@@ -53,6 +46,11 @@ const headerActive = function () {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
   }
-}
+};
 
 addEventOnElem(window, "scroll", headerActive);
+
+// MixitKit
+document.addEventListener("DOMContentLoaded", function () {
+  var mixer = mixitup(".product-filter-items");
+});
