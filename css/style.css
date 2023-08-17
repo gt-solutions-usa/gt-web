@@ -1937,6 +1937,10 @@ form button {
     color: white;
   }
 
+  .header.active .navbar-link {
+    color: #1c1c21;
+  }
+
   /* ?====== HERO ======?*/
 
   .hero {
