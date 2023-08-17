@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GT Solutions USA</title>
+    <title>Contact Us - GT Solutions USA</title>
 
     <!--? ============ FAVICON ============ ?-->
 
@@ -12,7 +12,7 @@
 
     <!--? ============ CUSTOM CSS ============ ?-->
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contactus.css" />
 
     <link rel="stylesheet" href="./css/slider1.css" />
 
@@ -119,13 +119,13 @@
         <section class="section hero" id="home" aria-label="hero">
           <div class="container">
             <div class="hero-content">
-              <h1 class="h1 hero-title">
-                We Are <span class="has-before">GT Solutions USA</span>
-              </h1>
+              <h1 class="h1 hero-title">Contact</h1>
 
               <p class="hero-text">
-                GT Solutions usa is a leading digital agency that has been
-                helping businesses achieve their online goals for over a decade.
+                In today’s digital age, your website is unquestionably the
+                mostimportant factor in your company’s success. Be Brandify
+                ensuresthat we create professional and appealing web designs
+                thatcomplement your company’s theme.
               </p>
 
               <div class="wrapper">
@@ -134,28 +134,8 @@
                   class="btn btn-primary has-before has-after"
                   >Get Started</a
                 >
-
-                <a
-                  href="./contact-us.html"
-                  class="btn btn-secondary has-before has-after"
-                  >Contact Us</a
-                >
-              </div>
-
-              <div class="reviews-hero">
-                <img src="./images/reviews-hero.png" alt="" />
               </div>
             </div>
-
-            <figure class="hero-banner">
-              <img
-                src="./images/hero-banner1.png"
-                width="794"
-                height="637"
-                alt="hero banner"
-                class="w-100"
-              />
-            </figure>
           </div>
         </section>
 
@@ -207,13 +187,17 @@
           </div>
         </section>
 
-        <!--? ============ FEATURE ============ ?-->
+        <!--? ============ CONTACT ============ ?-->
 
-        <section class="section feature" id="feature" aria-label="feature">
+        <section
+          class="section feature contact"
+          id="feature"
+          aria-label="feature"
+        >
           <div class="container">
             <figure class="feature-banner">
               <img
-                src="./images/feature.png"
+                src="./images/phone.png"
                 width="582"
                 height="585"
                 loading="lazy"
@@ -221,28 +205,69 @@
                 class="w-100"
               />
             </figure>
-
             <div class="feature-content">
               <h2 class="h2 section-title">
-                Website Development For Entrepreneurs & Enterprises.
+                Feel free to make a call request now
               </h2>
+              <div class="form">
+                <form id="contact-form">
+                  <label for="name">Your Name:</label>
+                  <input
+                    type="text"
+                    id="name_id"
+                    name="name"
+                    placeholder="Your Name"
+                    class="form-control"
+                    required
+                  />
 
-              <p>
-                Since 2005, our award-winning team at GT Solutions has worked
-                with the aim to create Websites and mobile that deliver
-                top-notch user experience and maximum engagement. From concept
-                formation and stunning website designs to exploring all web
-                monetization possibilities and maximizing websites optimization
-                services, CMS Dashboards and the whole application development
-                cycle:
-              </p>
+                  <label for="phone">Phone Number:</label>
+                  <input
+                    type="tel"
+                    id="phone_id"
+                    name="phone"
+                    placeholder="Phone Number"
+                    class="form-control"
+                    required
+                  />
 
-              <ul class="feature-list">
-                <li>Experienced Web Developers</li>
-                <li>Android & iOS Mobile App Development</li>
-                <li>Website for Startups to Large Enterprises</li>
-                <li>Affordable Web Solutions</li>
-              </ul>
+                  <label for="email">Email Address:</label>
+                  <input
+                    type="email"
+                    id="email_id"
+                    name="email"
+                    placeholder="Email Address"
+                    class="form-control"
+                    required
+                  />
+
+                  <label for="interest">I am interested in:</label>
+                  <input
+                    type="text"
+                    id="interest_id"
+                    name="interest"
+                    placeholder="I am interested in"
+                    class="form-control"
+                    required
+                  />
+
+                  <label for="message">Leave your message:</label>
+                  <textarea
+                    id="message_id"
+                    name="message"
+                    placeholder="Leave your message"
+                    class="form-control"
+                    required
+                  ></textarea>
+
+                  <button
+                    class="btn btn-primary has-before has-after"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -403,259 +428,6 @@
           <a href="#" class="btn btn-primary has-before has-after"
             >View All Services</a
           >
-        </section>
-
-        <!--? ============ PROJECT ============ ?-->
-
-        <section class="section project" id="project" aria-label="project">
-          <div class="container">
-            <h2 class="h2 section-title text-center">Our Portfolio</h2>
-            <p>
-              GTSolutions USA has worked with thousands of businesses all across
-              the world and has developed highly functional, responsive, and
-              feature-rich applications. Check out some of our best works:
-            </p>
-
-            <div class="filter-container">
-              <div class="product-filter-btns">
-                <!-- <li class="btn-filter" data-filter="all">All</li> -->
-                <li class="btn-filter" data-filter=".logo-designs">
-                  Logo Designs
-                </li>
-                <li class="btn-filter" data-filter=".websites">Websites</li>
-                <li class="btn-filter" data-filter=".mobile-apps">
-                  Mobile Apps
-                </li>
-                <li class="btn-filter" data-filter=".motion-graphics">
-                  Motion Graphics
-                </li>
-                <li class="btn-filter" data-filter=".branding">Branding</li>
-                <li class="btn-filter" data-filter=".cms">CMS</li>
-                <li class="btn-filter" data-filter=".illustration">
-                  Illustration
-                </li>
-                <li class="btn-filter" data-filter=".nfts">NFTs</li>
-              </div>
-              <div class="product-filter-items">
-                <div class="mix logo-designs">
-                  <div class="item-top">
-                    <img src="./images/proj1.png" alt="" srcset="" />
-                  </div>
-                  <div class="item-bottom"></div>
-                </div>
-                <div class="mix logo-designs">
-                  <div class="item-top">
-                    <img src="./images/proj2.png" alt="" srcset="" />
-                  </div>
-                  <div class="item-bottom"></div>
-                </div>
-                <div class="mix logo-designs">
-                  <div class="item-top">
-                    <img src="./images/proj3.png" alt="" srcset="" />
-                  </div>
-                  <div class="item-bottom"></div>
-                </div>
-                <div class="mix websites">
-                  <div class="item-top">
-                    <img src="./images/proj4.png" alt="" srcset="" />
-                  </div>
-                  <div class="item-bottom"></div>
-                </div>
-                <div class="mix motion-graphics">
-                  <div class="item-top">
-                    <img src="./images/proj5.png" alt="" srcset="" />
-                  </div>
-                  <div class="item-bottom"></div>
-                </div>
-                <div class="mix branding">
-                  <div class="item-top">
-                    <img src="./images/proj6.png" alt="" srcset="" />
-                  </div>
-                  <div class="item-bottom"></div>
-                </div>
-                <div class="mix cms">
-                  <div class="item-top">
-                    <img src="./images/proj7.png" alt="" srcset="" />
-                  </div>
-                  <div class="item-bottom"></div>
-                </div>
-                <div class="mix nfts">
-                  <div class="item-top">
-                    <img src="./images/proj8.png" alt="" srcset="" />
-                  </div>
-                  <div class="item-bottom"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--? ============ NEWSLETTER ============ ?-->
-
-        <section class="section newsletter">
-          <div class="text-center">
-            <h1>
-              Let's Get Started! Create Your <br />
-              Own Website Now!
-            </h1>
-          </div>
-
-          <div class="newsletter-form">
-            <form action="#" method="post">
-              <div class="input grid-list">
-                <input
-                  type="text"
-                  id="name"
-                  placeholder=" Name*"
-                  name="name"
-                  required
-                />
-
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email*"
-                  name="email"
-                  required
-                />
-
-                <input
-                  type="number"
-                  id="phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                />
-              </div>
-
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-        </section>
-
-        <!--? ============ CASE STUDY ============ ?-->
-
-        <section class="section feature" id="feature" aria-label="feature">
-          <div class="container">
-            <figure class="feature-banner">
-              <img
-                src="./images/case1.png"
-                width="582"
-                height="585"
-                loading="lazy"
-                alt="feature banner"
-                class="w-100"
-              />
-            </figure>
-
-            <div class="feature-content">
-              <h2 class="h2 section-title">Case Study</h2>
-
-              <p>
-                We have many years of exotic bird breeding experience. It is our
-                goal through this website to make beautiful exotic birds
-                accessible to the general public. Throughout the years, we have
-                experienced the most rewarding hobby anyone could have. In order
-                to offer the most healthy birds possible, we operate a closed
-                aviary. No visiting allowed for the health and safety of our
-                birds however, please take a look at our photo gallery to take a
-                virtual tour of our aviaries. Also, please send us an email or
-                give us a call if you have any questions we can answer. We love
-                talking to birds and love talking to you about birds. We hope
-                you enjoy the site and please also visit our Facebook page to
-                keep in touch.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!--? ============ CTA ============ ?-->
-
-        <section class="section feature cta" id="feature" aria-label="feature">
-          <div class="container">
-            <div class="feature-content">
-              <p class="cta-para">Web Design Consultant</p>
-              <h2 class="h2 section-title">
-                Let us help you in creating your online presence
-              </h2>
-
-              <p>
-                Our team of web experts will help you with your goal of
-                developing a website and will give you all the technical advice
-                in making it engaging and relevant for your business.
-              </p>
-
-              <a
-                href="./services.html"
-                class="btn btn-primary has-before has-after"
-                >Let's Get Started</a
-              >
-            </div>
-
-            <figure class="feature-banner">
-              <img
-                src="./images/cta-banner.png"
-                width="582"
-                height="585"
-                loading="lazy"
-                alt="feature banner"
-                class="w-100"
-              />
-            </figure>
-          </div>
-        </section>
-
-        <!--? ============ INDUSTRIES ============ ?-->
-
-        <section
-          class="section service indust"
-          id="service"
-          aria-label="service"
-        >
-          <div class="container">
-            <h2 class="h2 section-title text-center">
-              Industries We Have Served
-            </h2>
-
-            <p class="section-para">
-              We specialize in developing industry-specific applications for our
-              clients.
-            </p>
-
-            <ul class="grid-list">
-              <li>
-                <div class="col-content">
-                  <img src="./images/ind1.png" alt="" />
-                  <h5>Real Estate</h5>
-                  <p>
-                    A real estate app proves to be resourceful for real estate
-                    agents as well as clients
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div class="col-content">
-                  <img src="./images/ind2.png" alt="" />
-                  <h5>Education</h5>
-                  <p>
-                    A real estate app proves to be resourceful for real estate
-                    agents as well as clients
-                  </p>
-                </div>
-              </li>
-
-              <li>
-                <div class="col-content">
-                  <img src="./images/ind3.png" alt="" />
-                  <h5>Gaming</h5>
-                  <p>
-                    We develop interactive, engaging, and thrilling gaming
-                    experiences with enhanced user experience
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
         </section>
 
         <!--? ============ TESTIMONIAL2 ============ ?-->
@@ -1260,240 +1032,6 @@
           </div>
         </section>
 
-        <!--? ============ CONSULT ============ ?-->
-
-        <section
-          class="section feature consult"
-          id="feature"
-          aria-label="feature"
-        >
-          <div class="container">
-            <figure class="feature-banner">
-              <img
-                src="./images/consult.png"
-                width="582"
-                height="585"
-                loading="lazy"
-                alt="feature banner"
-                class="w-100"
-              />
-            </figure>
-            <div class="feature-content">
-              <p class="cta-para">Web Design Consultant</p>
-              <h2 class="h2 section-title">
-                We Create App Solutions That Help Businesses Target The
-                Bottomline
-              </h2>
-              <p class="consult-para">
-                Gtsolutions Usa is USA’s top Digital agency, known for providing
-                top-of-the-line websites, mobile app solutions. What makes our
-                firm stand out from other app development firms is our
-                knowledge, expertise, and state-of-the-art solutions.
-              </p>
-
-              <a
-                href="./services.html"
-                class="btn btn-primary has-before has-after"
-                >Let's Get Started</a
-              >
-            </div>
-          </div>
-        </section>
-
-        <!--? ============ PRICING ============ ?-->
-
-        <section class="section project" id="project" aria-label="project">
-          <div class="container">
-            <h2 class="h2 section-title text-center">
-              Pricing Plan That Works For Everyone!
-            </h2>
-            <p class="text-center">
-              We, at Gt Solutions usa, excel in providing impeccable services at
-              very competitive rates! Align your needs and jump right in to have
-              an experience of a lifetime!
-            </p>
-
-            <div class="pricing-container">
-              <div class="pricing-filter-btns">
-                <!-- <li class="btn-filter" data-filter="all">All</li> -->
-                <li class="btn-filter" data-filter=".logo-designs">
-                  Logo Designs
-                </li>
-                <li class="btn-filter" data-filter=".websites">Websites</li>
-                <li class="btn-filter" data-filter=".mobile-apps">
-                  Mobile Apps
-                </li>
-                <li class="btn-filter" data-filter=".motion-graphics">
-                  Motion Graphics
-                </li>
-                <li class="btn-filter" data-filter=".branding">Branding</li>
-                <li class="btn-filter" data-filter=".cms">CMS</li>
-                <li class="btn-filter" data-filter=".illustration">
-                  Illustration
-                </li>
-                <li class="btn-filter" data-filter=".nfts">NFTs</li>
-              </div>
-              <div class="pricing-filter-items">
-                <div class="mix logo-designs">
-                  <li>
-                    <div class="project-card pricing-card">
-                      <div class="pricing-table">
-                        <h1 class="price-h1">Basic</h1>
-                        <p class="price-tag">$50</p>
-                        <div class="list-container">
-                          <ul>
-                            <li>2 Design Concepts</li>
-                            <li>3 revisions</li>
-                            <li>1 Dedicated Designer</li>
-                            <li>Free color options</li>
-                            <li>Jpeg and Png</li>
-                            <li>12-24 Hours TAT</li>
-                            <li>100% satisfaction guarantee</li>
-                            <li>100% Unique Design Guarantee</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                          </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary has-before has-after"
-                          >Order Now</a
-                        >
-                      </div>
-                    </div>
-                  </li>
-                </div>
-                <div class="mix logo-designs">
-                  <li>
-                    <div class="project-card pricing-card">
-                      <div class="pricing-table">
-                        <h1 class="price-h1">Basic</h1>
-                        <p class="price-tag">$50</p>
-                        <div class="list-container">
-                          <ul>
-                            <li>2 Design Concepts</li>
-                            <li>3 revisions</li>
-                            <li>1 Dedicated Designer</li>
-                            <li>Free color options</li>
-                            <li>Jpeg and Png</li>
-                            <li>12-24 Hours TAT</li>
-                            <li>100% satisfaction guarantee</li>
-                            <li>100% Unique Design Guarantee</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                          </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary has-before has-after"
-                          >Order Now</a
-                        >
-                      </div>
-                    </div>
-                  </li>
-                </div>
-                <div class="mix logo-designs">
-                  <li>
-                    <div class="project-card pricing-card">
-                      <div class="pricing-table">
-                        <h1 class="price-h1">Basic</h1>
-                        <p class="price-tag">$50</p>
-                        <div class="list-container">
-                          <ul>
-                            <li>2 Design Concepts</li>
-                            <li>3 revisions</li>
-                            <li>1 Dedicated Designer</li>
-                            <li>Free color options</li>
-                            <li>Jpeg and Png</li>
-                            <li>12-24 Hours TAT</li>
-                            <li>100% satisfaction guarantee</li>
-                            <li>100% Unique Design Guarantee</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                          </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary has-before has-after"
-                          >Order Now</a
-                        >
-                      </div>
-                    </div>
-                  </li>
-                </div>
-                <div class="mix websites">
-                  <li>
-                    <div class="project-card pricing-card">
-                      <div class="pricing-table">
-                        <h1 class="price-h1">Basic</h1>
-                        <p class="price-tag">$50</p>
-                        <div class="list-container">
-                          <ul>
-                            <li>2 Design Concepts</li>
-                            <li>3 revisions</li>
-                            <li>1 Dedicated Designer</li>
-                            <li>Free color options</li>
-                            <li>Jpeg and Png</li>
-                            <li>12-24 Hours TAT</li>
-                            <li>100% satisfaction guarantee</li>
-                            <li>100% Unique Design Guarantee</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                          </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary has-before has-after"
-                          >Order Now</a
-                        >
-                      </div>
-                    </div>
-                  </li>
-                </div>
-                <div class="mix mobile-apps">
-                  <li>
-                    <div class="project-card pricing-card">
-                      <div class="pricing-table">
-                        <h1 class="price-h1">Basic</h1>
-                        <p class="price-tag">$50</p>
-                        <div class="list-container">
-                          <ul>
-                            <li>2 Design Concepts</li>
-                            <li>3 revisions</li>
-                            <li>1 Dedicated Designer</li>
-                            <li>Free color options</li>
-                            <li>Jpeg and Png</li>
-                            <li>12-24 Hours TAT</li>
-                            <li>100% satisfaction guarantee</li>
-                            <li>100% Unique Design Guarantee</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                            <li>2 Design Concepts</li>
-                          </ul>
-                        </div>
-                        <a href="#" class="btn btn-primary has-before has-after"
-                          >Order Now</a
-                        >
-                      </div>
-                    </div>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <!--? ============ LOCATION ============ ?-->
 
         <section
@@ -1506,9 +1044,9 @@
               <h2 class="h2 section-title">Location</h2>
 
               <ul>
-                <li>+1 (281) 210-9359</li>
+                <li>+1 (832) 548-5691</li>
                 <li>Info@gtsolutionsusa.com</li>
-                <li>15500 Voss Road Suite # 227 Sugar Land Texas 77498, USA</li>
+                <li>5500 Voss Road Suite # 105 Sugar Land Texas 77498, USA</li>
               </ul>
             </div>
 
@@ -1522,91 +1060,6 @@
                 class="w-100"
               />
             </figure>
-          </div>
-        </section>
-
-        <!--? ============ CONTACT ============ ?-->
-
-        <section
-          class="section feature contact"
-          id="feature"
-          aria-label="feature"
-        >
-          <div class="container">
-            <figure class="feature-banner">
-              <img
-                src="./images/phone.png"
-                width="582"
-                height="585"
-                loading="lazy"
-                alt="feature banner"
-                class="w-100"
-              />
-            </figure>
-            <div class="feature-content">
-              <h2 class="h2 section-title">
-                Feel free to make a call request now
-              </h2>
-              <div class="form">
-                <form id="contact-form">
-                  <label for="name">Your Name:</label>
-                  <input
-                    type="text"
-                    id="name_id"
-                    name="name"
-                    placeholder="Your Name"
-                    class="form-control"
-                    required
-                  />
-
-                  <label for="phone">Phone Number:</label>
-                  <input
-                    type="tel"
-                    id="phone_id"
-                    name="phone"
-                    placeholder="Phone Number"
-                    class="form-control"
-                    required
-                  />
-
-                  <label for="email">Email Address:</label>
-                  <input
-                    type="email"
-                    id="email_id"
-                    name="email"
-                    placeholder="Email Address"
-                    class="form-control"
-                    required
-                  />
-
-                  <label for="interest">I am interested in:</label>
-                  <input
-                    type="text"
-                    id="interest_id"
-                    name="interest"
-                    placeholder="I am interested in"
-                    class="form-control"
-                    required
-                  />
-
-                  <label for="message">Leave your message:</label>
-                  <textarea
-                    id="message_id"
-                    name="message"
-                    placeholder="Leave your message"
-                    class="form-control"
-                    required
-                  ></textarea>
-
-                  <button
-                    class="btn btn-primary has-before has-after"
-                    type="submit"
-                  >
-                    Submit
-                  </button>
-                </form>
-              </div>
-            </div>
           </div>
         </section>
       </article>
