@@ -42,7 +42,7 @@
     />
 
     <!--? ============ PRELOAD IMAGES ============ ?-->
-    <link rel="preload" as="image" href="./images/hero-banner.png" />
+    <link rel="preload" as="image" href="./images/portfolio-bg.png" />
   </head>
   <body id="top">
     <!--? ============ HEADER ============ ?-->
@@ -118,16 +118,24 @@
       <article>
         <!--? ============ HERO ============ ?-->
 
-        <section class="section hero" id="home" aria-label="hero">
+        <section
+          style="
+            background: url(./images/portfolio-bg.png) no-repeat right top;
+            background-size: cover;
+          "
+          class="section hero"
+          id="home"
+          aria-label="hero"
+        >
           <div class="container">
             <div class="hero-content">
-              <h1 class="h1 hero-title">
-                We Are <span class="has-before">GT Solutions USA</span>
-              </h1>
+              <h1 class="h1 hero-title">Portfolio</h1>
 
               <p class="hero-text">
-                GT Solutions usa is a leading digital agency that has been
-                helping businesses achieve their online goals for over a decade.
+                In today’s digital age, your website is unquestionably the
+                mostimportant factor in your company’s success. Be Brandify
+                ensuresthat we create professional and appealing web designs
+                thatcomplement your company’s theme.
               </p>
 
               <div class="wrapper">
@@ -136,28 +144,8 @@
                   class="btn btn-primary has-before has-after"
                   >Get Started</a
                 >
-
-                <a
-                  href="./contact-us.html"
-                  class="btn btn-secondary has-before has-after"
-                  >Contact Us</a
-                >
-              </div>
-
-              <div class="reviews-hero">
-                <img src="./images/reviews-hero.png" alt="" />
               </div>
             </div>
-
-            <figure class="hero-banner">
-              <img
-                src="./images/hero-banner1.png"
-                width="794"
-                height="637"
-                alt="hero banner"
-                class="w-100"
-              />
-            </figure>
           </div>
         </section>
 
@@ -488,84 +476,6 @@
                   <div class="item-bottom"></div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <!--? ============ NEWSLETTER ============ ?-->
-
-        <section class="section newsletter">
-          <div class="text-center">
-            <h1>
-              Let's Get Started! Create Your <br />
-              Own Website Now!
-            </h1>
-          </div>
-
-          <div class="newsletter-form">
-            <form action="#" method="post">
-              <div class="input grid-list">
-                <input
-                  type="text"
-                  id="name"
-                  placeholder=" Name*"
-                  name="name"
-                  required
-                />
-
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email*"
-                  name="email"
-                  required
-                />
-
-                <input
-                  type="number"
-                  id="phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                />
-              </div>
-
-              <button type="submit">Submit</button>
-            </form>
-          </div>
-        </section>
-
-        <!--? ============ CASE STUDY ============ ?-->
-
-        <section class="section feature" id="feature" aria-label="feature">
-          <div class="container">
-            <figure class="feature-banner">
-              <img
-                src="./images/case1.png"
-                width="582"
-                height="585"
-                loading="lazy"
-                alt="feature banner"
-                class="w-100"
-              />
-            </figure>
-
-            <div class="feature-content">
-              <h2 class="h2 section-title">Case Study</h2>
-
-              <p>
-                We have many years of exotic bird breeding experience. It is our
-                goal through this website to make beautiful exotic birds
-                accessible to the general public. Throughout the years, we have
-                experienced the most rewarding hobby anyone could have. In order
-                to offer the most healthy birds possible, we operate a closed
-                aviary. No visiting allowed for the health and safety of our
-                birds however, please take a look at our photo gallery to take a
-                virtual tour of our aviaries. Also, please send us an email or
-                give us a call if you have any questions we can answer. We love
-                talking to birds and love talking to you about birds. We hope
-                you enjoy the site and please also visit our Facebook page to
-                keep in touch.
-              </p>
             </div>
           </div>
         </section>
