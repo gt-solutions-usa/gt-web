@@ -52,9 +52,17 @@ addEventOnElem(window, "scroll", headerActive);
 
 // MixitKit
 document.addEventListener("DOMContentLoaded", function () {
-  var mixer = mixitup(".product-filter-items");
+  var mixer = mixitup(".product-filter-items", {
+    load: {
+      filter: ".logo-designs", // Set the initial filter to logo-designs
+    },
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var mixer = mixitup(".pricing-filter-items");
+  var mixer = mixitup(".pricing-filter-items", {
+    load: {
+      filter: ".logo-designs", // Set the initial filter to logo-designs
+    },
+  });
 });
