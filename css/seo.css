@@ -1221,7 +1221,7 @@ form button {
   width: 100%;
 }
 
-.pricing-filter-items {
+.seo-pricing-filter-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1255,11 +1255,12 @@ form button {
   border-radius: 20px;
   background-color: var(--white);
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .pricing-table .price-h1 {
   text-align: center;
-  padding: 30px 50px;
+  padding: 30px 5px;
   background-color: var(--black);
   color: var(--white);
 }
@@ -1268,8 +1269,15 @@ form button {
   background-color: var(--white);
   text-align: center;
   color: var(--main-gt-blue);
-  font-size: 90px;
+  font-size: 80px;
   font-weight: bold;
+  padding: 0 4rem;
+}
+
+.pricing-card .list-container ul li {
+  color: #1c1c21;
+  list-style: circle;
+  margin-left: 10px;
 }
 
 /* Scrollbar */

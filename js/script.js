@@ -66,3 +66,35 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var mixer = mixitup(".web-pricing-filter-items", {
+    load: {
+      filter: ".websites", // Set the initial filter to logo-designs
+    },
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var mixer = mixitup(".seo-pricing-filter-items", {
+    load: {
+      filter: ".seo", // Set the initial filter to logo-designs
+    },
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var mixer = mixitup(".anim-pricing-filter-items", {
+    load: {
+      filter: ".animation", // Set the initial filter to logo-designs
+    },
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var mixer = mixitup(".branding-pricing-filter-items", {
+    load: {
+      filter: ".branding", // Set the initial filter to logo-designs
+    },
+  });
+});
