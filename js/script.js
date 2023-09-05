@@ -54,7 +54,7 @@ addEventOnElem(window, "scroll", headerActive);
 document.addEventListener("DOMContentLoaded", function () {
   var mixer = mixitup(".product-filter-items", {
     load: {
-      filter: ".logo-designs", // Set the initial filter to logo-designs
+      filter: ".websites", // Set the initial filter to logo-designs
     },
   });
 });
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   var mixer = mixitup(".pricing-filter-items", {
     load: {
-      filter: ".logo-designs", // Set the initial filter to logo-designs
+      filter: ".websites", // Set the initial filter to logo-designs
     },
   });
 });

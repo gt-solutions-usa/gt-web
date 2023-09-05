@@ -472,7 +472,6 @@ body {
 /* ?============== HERO ==============?*/
 
 .hero {
-  background: url("../images/hero-bg.png") no-repeat right top;
   background-size: cover;
   padding-block-start: calc(var(--section-padding) + 60px);
 }
@@ -595,7 +594,7 @@ body {
 /* ?============== SERVICE ==============?*/
 
 .service {
-  background: url("../images/service-bg.png") no-repeat right top;
+  background: url("../images/services-new-bg.jpg") no-repeat right top;
   background-size: cover;
   align-items: center;
 }
@@ -745,7 +744,7 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  background: no-repeat url(..//images/newsletter-bg.png);
+  background: no-repeat url("../images/services-new-bg.jpg");
   background-size: cover;
   padding-block: 6.25rem;
   padding-bottom: rem;
@@ -1231,6 +1230,8 @@ form button {
 
 .pricing-filter-btns {
   padding: 3rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-filter {
