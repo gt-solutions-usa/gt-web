@@ -1180,7 +1180,7 @@ form button {
 }
 
 .content h2 {
-  color: #3cadff;
+  color: var(--main-gt-pink);
   font-weight: 400;
   padding-bottom: 1rem;
 }
@@ -1195,7 +1195,7 @@ form button {
 }
 
 .content .link a {
-  color: #3cadff;
+  color: var(--main-gt-pink);
   text-decoration: none;
 }
 
