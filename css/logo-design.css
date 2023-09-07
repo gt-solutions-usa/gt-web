@@ -7,8 +7,10 @@
 :root {
   /* ?======== COLORS ========?*/
 
-  --sky-blue-crayola: #58c9da;
-  --main-gt-blue: #3cadff;
+  --main-gt-pink-2: #58c9da;
+  --main-gt-pink: #3cadff;
+  --main-gt-pink: #e9204f;
+  --main-gt-pink-2: #a60127;
   --raisin-black_90: #1c1c21e6;
   --raisin-black-1: #28282f;
   --raisin-black-2: #1c1c21;
@@ -21,7 +23,7 @@
   --slate-gray: #717684;
   --cool-gray: #8b91a2;
   --gainsboro: #e1e5ea;
-  --mustard: #ffdd61;
+  --white: #ffdd61;
   --white: #ffffff;
   --black: #000000;
   --onyx: #3f3f46;
@@ -219,7 +221,7 @@ body {
   left: 0;
   width: 100%;
   height: 6px;
-  background-color: var(--main-gt-blue);
+  background-color: var(--main-gt-pink);
   z-index: -1;
 }
 
@@ -241,7 +243,7 @@ body {
   width: 100%;
   height: 50%;
   transform: scaleX(0);
-  background-color: var(--mustard);
+  background-color: var(--white);
   z-index: -1;
   transition: transform var(--transition-1);
 }
@@ -270,7 +272,7 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--main-gt-blue);
+  background-color: var(--main-gt-pink);
   color: var(--white);
 }
 
@@ -280,13 +282,13 @@ body {
 
 .btn-secondary {
   background-color: var(--white);
-  color: var(--main-gt-blue);
+  color: var(--main-gt-pink);
   gap: 15px;
 }
 
 .btn-secondary::before,
 .btn-secondary::after {
-  background-color: var(--sky-blue-crayola);
+  background-color: var(--main-gt-pink-2);
 }
 
 .btn-secondary:is(:hover, :focus) {
@@ -312,7 +314,7 @@ body {
   position: static;
   width: 12px;
   height: 12px;
-  background-color: var(--mustard);
+  background-color: var(--white);
   display: inline-block;
   border-radius: 50%;
   margin-inline-end: 10px;
@@ -452,7 +454,7 @@ body {
 }
 
 .navbar-link:is(:hover, :focus) {
-  color: var(--mustard);
+  color: var(--white);
 }
 
 .overlay {
@@ -472,7 +474,6 @@ body {
 /* ?============== HERO ==============?*/
 
 .hero {
-  background: url("../images/hero-bg.png") no-repeat right top;
   background-size: cover;
   padding-block-start: calc(var(--section-padding) + 60px);
 }
@@ -486,21 +487,15 @@ body {
   color: var(--white);
 }
 
+.we-are {
+  font-size: 45px;
+  font-weight: 500 !important;
+  color: white;
+}
+
 .hero-text {
   color: var(--white);
   font-size: var(--fs-7);
-  margin-block: 30px 35px;
-}
-
-.hero ul {
-  padding: 0 0 1.5rem 0;
-}
-
-.hero ul li {
-  list-style: circle;
-  color: white;
-  padding: 0 0 1rem;
-  margin: 0 0 0 1.5rem;
 }
 
 .hero-content :is(.wrapper, .hero-btn) {
@@ -510,8 +505,14 @@ body {
 
 .hero-content .wrapper {
   flex-wrap: wrap;
-  gap: 30px;
-  margin-block-end: 30px;
+}
+
+.hero-content ul {
+  margin-bottom: 20px;
+}
+
+.hero-content ul li {
+  color: white;
 }
 
 .hero-btn {
@@ -521,7 +522,7 @@ body {
 }
 
 .hero-btn:is(:hover, :focus) {
-  color: var(--main-gt-blue);
+  color: var(--main-gt-pink);
 }
 
 .hero-btn ion-icon {
@@ -606,7 +607,7 @@ body {
 /* ?============== SERVICE ==============?*/
 
 .service {
-  background: url("../images/service-bg.png") no-repeat right top;
+  background: url("../images/hero-bg-new.png") no-repeat right top;
   background-size: cover;
   align-items: center;
 }
@@ -628,13 +629,21 @@ body {
 }
 
 .service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   background-color: transparent;
-  border: 1px solid var(--main-gt-blue);
+  border: 1px solid var(--main-gt-pink);
   padding-block-end: 40px;
   /* border-block-end: 3px solid transparent; */
   box-shadow: var(--shadow-3);
   transition: var(--transition-1);
+}
+
+.service-card h3 {
+  text-align: center;
 }
 
 .service-card .card-icon {
@@ -662,7 +671,7 @@ body {
 
 .service-card .card-title:is(:hover, :focus-within) {
   /* color: hsl(var(--color)); */
-  color: var(--main-gt-blue);
+  color: var(--main-gt-pink);
 }
 
 .service .link-card {
@@ -679,11 +688,11 @@ body {
 }
 
 .service .link-card:is(:hover, :focus) .span {
-  color: var(--main-gt-blue);
+  color: var(--main-gt-pink);
 }
 
 .service .link-card ion-icon {
-  color: var(--main-gt-blue);
+  color: var(--main-gt-pink);
   font-size: 150px;
   transform: rotate(-45deg);
   margin: -25px auto;
@@ -736,7 +745,7 @@ body {
   display: inline-flex;
   margin: 0 0.5rem;
   padding: 0.7rem 2rem;
-  background-color: black;
+  background-color: var(--main-gt-pink);
   color: white;
   border-radius: 1rem;
   cursor: pointer;
@@ -756,7 +765,7 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
-  background: no-repeat url(..//images/newsletter-bg.png);
+  background: no-repeat url("../images/services-new-bg.jpg");
   background-size: cover;
   padding-block: 6.25rem;
   padding-bottom: rem;
@@ -781,17 +790,17 @@ body {
   flex-direction: column;
   padding: 1.3rem 2.3rem;
   gap: 2rem;
-  border: 2px solid var(--main-gt-blue);
+  border: 2px solid var(--main-gt-pink);
   background: transparent;
-  color: var(--main-gt-blue);
+  color: var(--main-gt-pink);
   border-radius: 5px;
   margin: 5px;
 }
 
 form button {
-  background: var(--main-gt-blue);
+  background: var(--main-gt-pink);
   padding: 1.3rem 3.1rem;
-  border: 2px solid var(--main-gt-blue);
+  border: 2px solid var(--main-gt-pink);
   border-radius: 5px;
   margin: 5px;
 }
@@ -799,7 +808,7 @@ form button {
 /* ?============== CTA ==============?*/
 
 .cta {
-  background: url("../images/cta-bg.png") no-repeat right top;
+  background: url("../images/hero-bg-new.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -809,7 +818,7 @@ form button {
 }
 
 .cta-para {
-  color: var(--main-gt-blue);
+  color: var(--main-gt-pink);
   font-size: 30px;
   font-weight: 800;
 }
@@ -865,13 +874,13 @@ form button {
 /* ?============== TESTIMONIAL2 ==============?*/
 
 .testi2 {
-  background: url("../images/testi2-bg.png") no-repeat right top;
+  background: url("../images/hero-bg-new.png") no-repeat right top;
   background-size: cover;
 }
 
 .test2-title {
   font-size: 20px;
-  color: var(--main-gt-blue);
+  color: var(--main-gt-pink);
   text-align: center;
 }
 
@@ -1176,7 +1185,7 @@ form button {
 }
 
 .content h2 {
-  color: #3cadff;
+  color: var(--main-gt-pink);
   font-weight: 400;
   padding-bottom: 1rem;
 }
@@ -1191,7 +1200,7 @@ form button {
 }
 
 .content .link a {
-  color: #3cadff;
+  color: var(--main-gt-pink);
   text-decoration: none;
 }
 
@@ -1210,7 +1219,7 @@ form button {
 /* ?============== CONSULT ==============?*/
 
 .consult {
-  background: url("../images/consult-bg.png") no-repeat right top;
+  background: url("../images/hero-bg-new.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -1232,7 +1241,7 @@ form button {
   width: 100%;
 }
 
-.pricing-filter-items {
+.web-pricing-filter-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1242,13 +1251,15 @@ form button {
 
 .pricing-filter-btns {
   padding: 3rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-filter {
   display: inline-flex;
   margin: 0 0.5rem;
   padding: 0.7rem 2rem;
-  background-color: black;
+  background-color: var(--main-gt-pink);
   color: white;
   border-radius: 1rem;
   cursor: pointer;
@@ -1279,7 +1290,7 @@ form button {
 .pricing-table .price-tag {
   background-color: var(--white);
   text-align: center;
-  color: var(--main-gt-blue);
+  color: var(--main-gt-pink);
   font-size: 80px;
   font-weight: bold;
   padding: 0 4rem;
@@ -1298,7 +1309,7 @@ form button {
   padding: 30px;
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin; /* Set the width of the scrollbar */
-  scrollbar-color: var(--main-gt-blue); /* Set the color of the scrollbar */
+  scrollbar-color: var(--main-gt-pink); /* Set the color of the scrollbar */
 }
 
 /* Style the scrollbar */
@@ -1311,7 +1322,7 @@ form button {
 }
 
 .list-container::-webkit-scrollbar-thumb {
-  background-color: var(--main-gt-blue);
+  background-color: var(--main-gt-pink);
   border-radius: 20px;
 }
 
@@ -1328,7 +1339,7 @@ form button {
 /* ?============== LOCATION ==============?*/
 
 .location {
-  background: url("../images/location-bg.png") no-repeat right top;
+  background: url("../images/hero-bg-new.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -1356,14 +1367,14 @@ form button {
 .form input {
   padding: 20px;
   margin-bottom: 30px;
-  border: 1px solid var(--main-gt-blue);
+  border: 1px solid var(--main-gt-pink);
   border-radius: 30px;
   background-color: #ebebee;
   color: var(--black);
 }
 
 .form textarea {
-  border: 1px solid var(--main-gt-blue);
+  border: 1px solid var(--main-gt-pink);
   width: 100%;
   height: 300px;
   padding: 20px;
@@ -1395,7 +1406,7 @@ form button {
 .footer1 .right input {
   padding: 20px;
   margin: 20px 0;
-  border: 1px solid var(--main-gt-blue);
+  border: 1px solid var(--main-gt-pink);
   border-radius: 50px;
   position: relative;
   color: var(--white);
@@ -1429,10 +1440,10 @@ form button {
 }
 
 .copyright {
-  background-color: var(--main-gt-blue);
+  background-color: var(--main-gt-pink);
   text-align: center;
   padding: 30px 0;
-  color: var(--black);
+  color: white;
   font-weight: 500;
 }
 
@@ -1441,8 +1452,8 @@ form button {
 .back-top-btn {
   position: fixed;
   bottom: 20px;
-  right: 30px;
-  background-color: var(--main-gt-blue);
+  left: 30px;
+  background-color: var(--main-gt-pink);
   color: var(--white);
   font-size: 18px;
   padding: 16px;
@@ -1521,8 +1532,8 @@ form button {
   /* ?====== LOCATION ======?*/
 
   .location img {
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 350px;
   }
 
   .location h2 li {
@@ -1582,6 +1593,11 @@ form button {
 
   /* ?====== HERO ======?*/
 
+  .hero {
+    background: url("../images/hero-bg-new.png") no-repeat right top;
+    background-size: cover;
+  }
+
   .hero .container {
     gap: 120px;
   }
@@ -1627,11 +1643,13 @@ form button {
   /* ?====== FEATURE ======?*/
 
   .feature-banner {
-    max-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .feature-list {
-    gap: 30px;
+    gap: 10px;
   }
 
   .feature-card {
@@ -1769,7 +1787,7 @@ form button {
     width: 0;
     height: 4px;
     border-radius: 5px;
-    background-color: var(--main-gt-blue);
+    background-color: var(--main-gt-pink);
     transition: var(--transition-1);
   }
 
@@ -1957,6 +1975,11 @@ form button {
 
   /* ?====== HERO ======?*/
 
+  .hero {
+    background: url("../images/hero-bg-new.png") no-repeat right top;
+    background-size: cover;
+  }
+
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -1964,7 +1987,7 @@ form button {
   }
 
   .hero-text {
-    margin: 3rem 0;
+    margin-block: 40px 45px;
   }
 
   .hero .wrapper {
