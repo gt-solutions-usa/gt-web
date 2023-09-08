@@ -808,7 +808,7 @@ form button {
 /* ?============== CTA ==============?*/
 
 .cta {
-  background: url("../images/hero-bg-new.png") no-repeat right top;
+  background: url("../images/section-bg.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -874,7 +874,7 @@ form button {
 /* ?============== TESTIMONIAL2 ==============?*/
 
 .testi2 {
-  background: url("../images/hero-bg-new.png") no-repeat right top;
+  background: url("../images/section-bg.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -1219,7 +1219,7 @@ form button {
 /* ?============== CONSULT ==============?*/
 
 .consult {
-  background: url("../images/hero-bg-new.png") no-repeat right top;
+  background: url("../images/section-bg.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -1339,7 +1339,7 @@ form button {
 /* ?============== LOCATION ==============?*/
 
 .location {
-  background: url("../images/hero-bg-new.png") no-repeat right top;
+  background: url("../images/section-bg.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -1594,7 +1594,7 @@ form button {
   /* ?====== HERO ======?*/
 
   .hero {
-    background: url("../images/hero-bg-new.png") no-repeat right top;
+    background: url("../images/hero-new-bg.png") no-repeat right top;
     background-size: cover;
   }
 
@@ -1976,7 +1976,7 @@ form button {
   /* ?====== HERO ======?*/
 
   .hero {
-    background: url("../images/hero-bg-new.png") no-repeat right top;
+    background: url("../images/hero-new-bg.png") no-repeat right top;
     background-size: cover;
   }
 
