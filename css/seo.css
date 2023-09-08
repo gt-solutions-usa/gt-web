@@ -953,7 +953,6 @@ form button {
 
 .testicarousel .testicard {
   scroll-snap-align: start;
-  height: 50vh;
   padding: 2rem;
   border: 1px solid #3cadff;
   list-style: none;
