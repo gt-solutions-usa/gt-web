@@ -474,6 +474,7 @@ body {
 /* ?============== HERO ==============?*/
 
 .hero {
+  background: url("../images/hero-new-bg.png") no-repeat right top;
   background-size: cover;
   padding-block-start: calc(var(--section-padding) + 60px);
 }
@@ -1246,6 +1247,7 @@ form button {
 .pricing-filter-btns {
   padding: 3rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
