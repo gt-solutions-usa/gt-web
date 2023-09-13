@@ -474,6 +474,7 @@ body {
 /* ?============== HERO ==============?*/
 
 .hero {
+  background: url("../images/blog-bg.png") no-repeat right top;
   background-size: cover;
   padding-block-start: calc(var(--section-padding) + 60px);
 }
@@ -602,7 +603,7 @@ body {
 /* ?============== SERVICE ==============?*/
 
 .service {
-  background: url("../images/hero-bg-new.png") no-repeat right top;
+  background: url("../images/section-bg.png") no-repeat right top;
   background-size: cover;
   align-items: center;
 }
@@ -803,7 +804,7 @@ form button {
 /* ?============== CTA ==============?*/
 
 .cta {
-  background: url("../images/hero-bg-new.png") no-repeat right top;
+  background: url("../images/section-bg.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -869,7 +870,7 @@ form button {
 /* ?============== TESTIMONIAL2 ==============?*/
 
 .testi2 {
-  background: url("../images/hero-bg-new.png") no-repeat right top;
+  background: url("../images/section-bg.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -1214,7 +1215,7 @@ form button {
 /* ?============== CONSULT ==============?*/
 
 .consult {
-  background: url("../images/hero-bg-new.png") no-repeat right top;
+  background: url("../images/section-bg.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -1334,7 +1335,7 @@ form button {
 /* ?============== LOCATION ==============?*/
 
 .location {
-  background: url("../images/hero-bg-new.png") no-repeat right top;
+  background: url("../images/section-bg.png") no-repeat right top;
   background-size: cover;
 }
 
@@ -1589,7 +1590,7 @@ form button {
   /* ?====== HERO ======?*/
 
   .hero {
-    background: url("../images/hero-bg-new.png") no-repeat right top;
+    background: url("../images/blog-bg.png") no-repeat right top;
     background-size: cover;
   }
 
@@ -1971,7 +1972,7 @@ form button {
   /* ?====== HERO ======?*/
 
   .hero {
-    background: url("../images/hero-bg-new.png") no-repeat right top;
+    background: url("../images/blog-bg.png") no-repeat right top;
     background-size: cover;
   }
 
