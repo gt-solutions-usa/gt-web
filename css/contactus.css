@@ -474,7 +474,7 @@ body {
 /* ?============== HERO ==============?*/
 
 .hero {
-  background: url("../images/hero-new-bg.png") no-repeat right top;
+  background: url("../images/contact-bg.png") no-repeat right top;
   background-size: cover;
   padding-block-start: calc(var(--section-padding) + 60px);
 }
@@ -1590,7 +1590,7 @@ form button {
   /* ?====== HERO ======?*/
 
   .hero {
-    background: url("../images/hero-new-bg.png") no-repeat right top;
+    background: url("../images/contact-bg.png") no-repeat right top;
     background-size: cover;
   }
 
@@ -1972,7 +1972,7 @@ form button {
   /* ?====== HERO ======?*/
 
   .hero {
-    background: url("../images/hero-new-bg.png") no-repeat right top;
+    background: url("../images/contact-bg.png") no-repeat right top;
     background-size: cover;
   }
 
