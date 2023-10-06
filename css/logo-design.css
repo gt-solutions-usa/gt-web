@@ -1452,7 +1452,7 @@ form button {
 
 .back-top-btn {
   position: fixed;
-  bottom: 20px;
+  bottom: 90px;
   left: 30px;
   background-color: var(--main-gt-pink);
   color: var(--white);
