@@ -948,6 +948,33 @@ form button {
   padding-bottom: 2rem;
 }
 
+/* ?============== CALL ==============?*/
+
+.call {
+  background-color: var(--main-gt-pink);
+}
+.call .container {
+  background-color: transparent;
+}
+
+.call h2 {
+  color: white;
+}
+
+.call-feature-one {
+  background-color: white;
+  padding-left: 2rem;
+  border-radius: 2rem;
+}
+
+.call-feature-one h2 {
+  color: black;
+}
+
+.call-feature-two h2 {
+  font-size: 4rem;
+}
+
 /* ?============== TESTIMONIAL2 ==============?*/
 
 .testi2 {
