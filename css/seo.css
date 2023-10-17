@@ -588,8 +588,50 @@ body {
   align-items: center;
 }
 
+.feature .section-title {
+  margin-block: 30px 30px;
+}
+
+.feature-content h2 {
+  font-size: 3rem;
+}
+
 .feature-content p {
   padding-bottom: 20px;
+  color: rgb(41, 37, 37);
+}
+
+.feature .wrapper {
+  background-color: #e9204f30;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+}
+
+.wrapper p {
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.wrapper .wrapper-btn {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+}
+
+.list-seo ul {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.list-seo ul li {
+  list-style: circle;
+  color: black;
+  font-weight: 500;
 }
 
 .feature-card .card-icon {
@@ -844,6 +886,7 @@ form button {
 
 .indust {
   background: var(--white);
+  padding-bottom: 10rem;
 }
 
 .indust .h2,
@@ -856,36 +899,22 @@ form button {
   margin-bottom: 40px;
 }
 
-.indust .col-content {
-  position: relative;
+.grid-service {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
-.col-content img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 15px;
-  filter: brightness(80%);
-  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  will-change: filter;
+.grid-service h2 {
+  color: black;
+  padding: 1rem 0;
+  font-size: 1.5rem;
 }
 
-.col-content h5 {
-  position: absolute;
-  font-size: 22px;
-  font-weight: 500;
-  color: var(--white);
-  left: 15px;
-  bottom: 100px;
-}
-
-.col-content p {
-  position: absolute;
-  font-size: 15px;
-  color: var(--white);
-  left: 15px;
-  bottom: 20px;
-  letter-spacing: 2px;
+.grid-service p {
+  color: black;
+  font-size: 1.2rem;
 }
 
 /* ?============== TESTIMONIAL2 ==============?*/
@@ -1364,6 +1393,10 @@ form button {
   color: var(--white);
   font-size: 20px;
   list-style: circle;
+}
+
+.location iframe {
+  width: 100% !important;
 }
 
 /* ?============== CONTACT ==============?*/
