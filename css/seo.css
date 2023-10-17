@@ -917,6 +917,37 @@ form button {
   font-size: 1.2rem;
 }
 
+/* ?============== INFO ==============?*/
+
+.info {
+  padding: 4rem 0;
+}
+
+.highlight-info {
+  background-color: #e9204f;
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 2rem;
+  border-radius: 0 0rem 2rem 2rem;
+}
+
+.info .container {
+  background-color: #e9204f29;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.info .container img {
+  border-radius: 2rem;
+}
+
+.info .section-para {
+  padding-bottom: 2rem;
+}
+
 /* ?============== TESTIMONIAL2 ==============?*/
 
 .testi2 {
@@ -2065,6 +2096,10 @@ form button {
 
   .filter-btn {
     padding-inline: 40px;
+  }
+
+  .highlight-info {
+    width: 60%;
   }
 
   /* ?====== INDUSTRIES ======?*/
