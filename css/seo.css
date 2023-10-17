@@ -975,6 +975,106 @@ form button {
   font-size: 4rem;
 }
 
+/* ?============== FAQs ==============?*/
+
+.well {
+  width: 100%;
+  margin: auto;
+}
+
+.well ul {
+  padding: 0;
+}
+
+.well li {
+  margin-bottom: 10px;
+  border-radius: 3px;
+
+  & .head {
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    color: white;
+    padding: 7px;
+    background: var(--main-gt-pink);
+  }
+
+  & .body {
+    color: black;
+    padding: 0 10px 0 10px;
+    border: 1px solid #e7e7e7;
+  }
+
+  & input[type="checkbox"] {
+    &:checked {
+      & ~ .head {
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-bottom: none;
+      }
+
+      & ~ .body {
+        border: none;
+      }
+    }
+  }
+}
+
+/* TOGGLE ACCORDION STYLE */
+.toggle-accordion {
+  position: relative;
+  width: 100%;
+  padding: 0 !important;
+  background: white;
+  list-style: none;
+
+  .head {
+    display: block;
+    cursor: pointer;
+
+    & i {
+      float: right;
+      margin-top: 3px;
+    }
+
+    & span {
+      transition: all 0.25s ease-in-out;
+      transform: translate(0, -3px) rotate(-180deg);
+    }
+  }
+
+  .body {
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    z-index: 2;
+    padding: 10px 10px;
+    max-height: 5000px;
+    transition: all 0.25s ease-in-out;
+  }
+
+  & input[type="checkbox"] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+
+    &:checked {
+      & ~ .body {
+        max-height: 0;
+        padding: 0px 10px;
+      }
+
+      & ~ .head {
+        & i {
+          transform: translate(0, -3px) rotate(-180deg);
+        }
+      }
+    }
+  }
+}
+
 /* ?============== TESTIMONIAL2 ==============?*/
 
 .testi2 {
