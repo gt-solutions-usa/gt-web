@@ -98,3 +98,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var mixer = mixitup(".seo-pricing-filter-items", {
+    load: {
+      filter: ".seo", // Set the initial filter to logo-designs
+    },
+  });
+});
