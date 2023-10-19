@@ -596,7 +596,7 @@ body {
   margin: 0;
 }
 
-.feature-content p {
+.feature-content .description {
   color: black;
 }
 
