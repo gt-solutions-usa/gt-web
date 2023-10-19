@@ -580,6 +580,10 @@ body {
 
 /* ?============== FEATURE ==============?*/
 
+.feature {
+  padding-top: 3rem;
+}
+
 .feature .container,
 .feature-list {
   display: grid;
