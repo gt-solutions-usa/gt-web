@@ -325,7 +325,7 @@ body {
 }
 
 .section-title {
-  margin-block: 30px 50px;
+  margin-block: 30px;
 }
 
 .grid-list {
@@ -643,7 +643,6 @@ body {
 }
 
 .service .section-title {
-  margin-block: 30px 60px;
   color: var(--white);
 }
 
@@ -852,6 +851,7 @@ form button {
 
 .indust {
   background: var(--white);
+  padding-bottom: 10rem;
 }
 
 .indust .h2,
@@ -859,13 +859,32 @@ form button {
   color: var(--black);
 }
 
+.indust .h3 {
+  color: black;
+  font-weight: 600;
+}
+
 .indust .section-para {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.indust .col-content {
-  position: relative;
+.grid-service {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.grid-service h2 {
+  color: black;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.grid-service p {
+  color: black;
+  font-size: 1.2rem;
 }
 
 .col-content img {
@@ -1373,6 +1392,10 @@ form button {
   list-style: circle;
 }
 
+.location iframe {
+  width: 100% !important;
+}
+
 /* ?============== CONTACT ==============?*/
 
 .contact {
@@ -1618,7 +1641,7 @@ form button {
   /* ?====== HERO ======?*/
 
   .hero {
-    background: url("../images/hero-bg-new.png") no-repeat right top;
+    background: url("../images/hero-new-bg.png") no-repeat right top;
     background-size: cover;
   }
 
@@ -1971,7 +1994,6 @@ form button {
   }
 
   .section-title.text-center {
-    max-width: 20ch;
     margin-inline: auto;
   }
 
