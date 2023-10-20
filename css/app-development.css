@@ -1046,6 +1046,11 @@ form button {
 
 /* ?============== TESTIMONIAL2 ==============?*/
 
+.testimonial-1 {
+  display: flex;
+  flex-direction: column;
+}
+
 .testi2 {
   background: url("../images/hero-bg-new.png") no-repeat right top;
   background-size: cover;
