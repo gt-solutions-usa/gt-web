@@ -746,7 +746,7 @@ body {
   width: 100%;
 }
 
-.product-filter-items {
+.branding-pricing-filter-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -773,6 +773,10 @@ body {
   border: 1px solid black;
   background-color: transparent;
   color: black;
+}
+
+.item-top iframe {
+  border-radius: 2rem;
 }
 
 /* ?============== NEWSLETTER ==============?*/
@@ -1364,6 +1368,10 @@ form button {
   color: var(--white);
   font-size: 20px;
   list-style: circle;
+}
+
+.location iframe {
+  width: 100% !important;
 }
 
 /* ?============== CONTACT ==============?*/
