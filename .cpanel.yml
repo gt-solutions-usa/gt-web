@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/gtsolutionsusa/public_html/GTS
-    - /bin/cp * $DEPLOYPATH
