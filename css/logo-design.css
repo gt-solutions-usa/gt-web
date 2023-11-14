@@ -584,6 +584,43 @@ body {
   border: none !important;
 }
 
+.submenu {
+  display: none; /* Hide the submenu by default */
+  position: absolute;
+  background-color: #e9204f;
+  z-index: 1;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: left;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.navbar-item:hover .submenu {
+  display: block; /* Display the submenu when hovering over the parent item */
+}
+
+.navbar-item {
+  position: relative; /* Ensure that submenu is positioned relative to the parent */
+}
+
+/* Style the submenu items */
+.submenu li {
+  display: block;
+}
+
+/* Additional styles for links inside the submenu */
+.submenu a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff; /* Text color in the submenu */
+}
+
+/* Additional styles for hover effect on submenu items */
+.submenu li:hover {
+  background-color: #ff3366; /* Change the background color on hover as needed */
+}
+
 /* ?============== FEATURE ==============?*/
 
 .feature .container,
