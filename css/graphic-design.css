@@ -618,6 +618,10 @@ body {
 
 /* ?============== FEATURE ==============?*/
 
+.feature {
+  padding-block: 3rem;
+}
+
 .feature .container,
 .feature-list {
   display: grid;
