@@ -757,6 +757,39 @@ body {
   color: hsl(var(--color));
 }
 
+/* ?============== CATEGORIES ==============?*/
+
+.service .catgory {
+  background-color: #e9204f !important;
+}
+
+.single-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+  text-align: center;
+  background-color: #e9204f;
+  padding: 32px;
+  border-radius: 32px;
+}
+
+.single-category img {
+  width: 100px;
+  height: 100px;
+}
+
+.single-category h5 {
+  color: white;
+  font-size: 24px;
+}
+
+.single-category p {
+  color: white;
+  font-size: 18px;
+}
+
 /* ?============== PROJECT ==============?*/
 
 .project {
@@ -1401,6 +1434,10 @@ form button {
   color: var(--white);
   font-size: 20px;
   list-style: circle;
+}
+
+.location iframe {
+  width: 100% !important;
 }
 
 /* ?============== CONTACT ==============?*/
